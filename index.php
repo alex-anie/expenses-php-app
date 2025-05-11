@@ -45,13 +45,13 @@
                         foreach($expense as $id => $data){
                             echo '
                                     <tr>
-                                        <td></td>
-                                        <td>2025-04-01</td>
-                                        <td>Travel</td>
-                                        <td>Flight to NYC for conference</td>
-                                        <td>450.00</td>
-                                        <td>Credit Card</td>
-                                        <td>Marketing</td>
+                                        <td>'.$id.'</td>
+                                        <td>'.$data['date'].'</td>
+                                        <td>'.$data['category'].'</td>
+                                        <td>'.$data['description'].'</td>
+                                        <td>$'.$data['amount'].'</td>
+                                        <td>'.$data['payment_method'].'</td>
+                                        <td>'.$data['department'].'</td>
                                     </tr>
                             ';
                         }
